@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sports | Global News Portal</title>
+  <link rel="stylesheet" href="sports.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-brand">🌐 News</div>
+    <button class="nav-toggle" onclick="toggleMenu()">☰</button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="politics.html">Politics</a></li>
+      <li><a href="technology.html">Technology</a></li>
+      <li><a href="sports.html" class="active">Sports</a></li>
+      <li><a href="entertainment.html">Entertainment</a></li>
+    </ul>
+  </nav>
+  <div class="category-switcher">
+    <label for="categorySelect">🗂️ Browse Categories:</label>
+    <select id="categorySelect">
+      <option value="index.html">🏠 Home</option>
+      <option value="politics.html">🗳️ Politics</option>
+      <option value="technology.html">💻 Technology</option>
+      <option value="sports.html">🏅 Sports</option>
+      <option value="entertainment.html">🎬 Entertainment</option>
+    </select>
+  </div>
+  <div class="search-wrapper">
+    <input type="text" id="searchInput" placeholder="Search news..." />
+  </div>
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>🏅 Sports Pulse: Where Passion Meets Performance</h1>
+    <p>From stadium roars to street rivalries, we bring you the latest in cricket, football, athletics, and more.</p>
+  </section>
+
+  <!-- Featured Articles -->
+  <section class="grid-articles">
+    <article class="card">
+      <img src="/images/cricket-victory.jpg" alt="Cricket Victory">
+      <h2>Pakistan Clinches Series Win Against Australia</h2>
+      <p>With a thrilling last-over finish, Pakistan seals the series 3-2 in Lahore. Babar Azam named Player of the Series.</p>
+      <a href="#">Match Recap →</a>
+    </article>
+
+    <article class="card">
+      <img src="/images/football-league.jpg" alt="Football League">
+      <h2>Karachi Premier League Kicks Off</h2>
+      <p>Local clubs battle for glory as the city’s biggest football tournament begins with record attendance.</p>
+      <a href="#">League Schedule →</a>
+    </article>
+
+    <article class="card">
+      <img src="/images/olympic-pic.jpg" alt="Olympics">
+      <h2>Pakistan Eyes Gold in Paris Olympics 2028</h2>
+      <p>National athletes begin training camps with hopes of historic wins in boxing, javelin, and wrestling.</p>
+      <a href="#">Training Insights →</a>
+    </article>
+
+    <article class="card">
+      <img src="/images/sports-women.jpg" alt="Women in Sports">
+      <h2>Women’s Sports Rising in Pakistan</h2>
+      <p>From hockey to martial arts, female athletes are breaking barriers and inspiring a new generation.</p>
+      <a href="#">Read Interviews →</a>
+    </article>
+
+    <article class="card">
+      <img src="/images/esports-arena.jpg" alt="Esports Arena">
+      <h2>Esports Boom: Pakistan’s Youth Dominating Global Tournaments</h2>
+      <p>From PUBG to Valorant, local gamers are making waves in international competitions with million-dollar prize pools.</p>
+      <a href="#">Meet the Champions →</a>
+    </article>
+
+    <article class="card">
+      <img src="/images/hocky-revival.jpg" alt="Hockey Revival">
+      <h2>National Hockey Revival: New Talent, New Hope</h2>
+      <p>After years of decline, Pakistan’s hockey federation launches youth academies and international training programs.</p>
+      <a href="#">Program Details →</a>
+    </article>
+  </section>
+
+  <!-- Match Highlights -->
+  <section class="match-highlights">
+    <h2>🔥 Trending Scores</h2>
+    <ul>
+      <li>🏏 Pakistan 312/7 vs India — Asia Cup Final</li>
+      <li>⚽ Karachi United 2 - 1 Lyari FC — KPL Opener</li>
+      <li>🏀 Lahore Titans 89 - 76 Islamabad Hawks — Basketball League</li>
+      <li>🎾 Aisam Qureshi wins doubles title in Dubai Open</li>
+    </ul>
+  </section>
+
+  <!-- Fan Zone -->
+  <section class="fan-zone">
+    <h2>🎉 Fan Zone: Voices from the Crowd</h2>
+    <blockquote>“I’ve been watching cricket since the 90s, but this new squad has fire in their eyes!” — Faizan, Lahore</blockquote>
+    <blockquote>“Football in Lyari is more than a game. It’s our heartbeat.” — Ayesha, Karachi</blockquote>
+    <blockquote>“I cried when Shah Hussain Shah won gold. That’s our pride!” — Bilal, Islamabad</blockquote>
+  </section>
+
+  <!-- Editorials -->
+  <section class="opinion-section">
+    <h2>🧠 Sports Culture & Commentary</h2>
+    <div class="opinion">
+      <h3>Why Street Cricket Still Rules Karachi</h3>
+      <p>Despite digital distractions, the spirit of tape-ball cricket thrives in every alley and rooftop.</p>
+    </div>
+    <div class="opinion">
+      <h3>Coaching Crisis: The Need for Grassroots Development</h3>
+      <p>Experts call for structured youth programs and certified coaches to uplift national performance.</p>
+    </div>
+    <div class="opinion">
+      <h3>Sports as a Tool for Peacebuilding</h3>
+      <p>In conflict zones, community sports programs are helping youth stay away from violence and build teamwork.</p>
+    </div>
+    <div class="opinion">
+      <h3>Why Schools Must Prioritize Physical Education</h3>
+      <p>Experts argue that sports in schools improve mental health, discipline, and academic performance.</p>
+    </div>
+  </section>
+
+  <!-- Legends Corner -->
+  <section class="legends-corner">
+    <h2>🏆 Legends Corner</h2>
+    <p>Celebrating icons who changed the game:</p>
+    <ul>
+      <li>🏏 Wasim Akram — The Sultan of Swing</li>
+      <li>⚽ Kaleemullah Khan — Pakistan’s Football Pioneer</li>
+      <li>🥋 Shah Hussain Shah — Judo Champion</li>
+      <li>🏃‍♀️ Naseem Hameed — Fastest Woman in South Asia</li>
+    </ul>
+  </section>
+
+  <!-- Stadium Spotlight -->
+  <section class="stadium-spotlight">
+    <h2>🏟️ Stadium Spotlight: Gaddafi Stadium</h2>
+    <p>With a seating capacity of over 27,000, Lahore’s iconic stadium has hosted historic matches and electrifying moments. Renovations are underway to make it a smart stadium with digital ticketing and LED pitch tech.</p>
+  </section>
+
+  <!-- Upcoming Events -->
+  <section class="events-calendar">
+    <h2>📅 Upcoming Sports Events</h2>
+    <ul>
+      <li>🏏 Pakistan vs Sri Lanka — 2nd ODI — Aug 25, Rawalpindi</li>
+      <li>⚽ KPL Semi-Finals — Aug 28, Karachi Stadium</li>
+      <li>🥋 National Martial Arts Championship — Sept 3, Lahore</li>
+      <li>🏃‍♂️ Inter-University Athletics Meet — Sept 10, Islamabad</li>
+    </ul>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Global News Portal | All rights reserved.</p>
+  </footer>
+
+  <!-- Toggle Script -->
+  <script>
+    function toggleMenu() {
+      document.getElementById('navLinks')?.classList.toggle('active');
+    }
+    const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+    }
+  });
+});
+
+document.querySelectorAll('.card, .opinion, .match-highlights li').forEach(el => {
+  observer.observe(el);
+});
+const links = document.querySelectorAll('.nav-links a');
+const currentURL = window.location.href;
+
+links.forEach(link => {
+  if (link.href === currentURL) {
+    link.classList.add('active');
+  }
+});
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth'
+    });
+  });
+});
+// 🔍 Live search across sports content
+function setupLiveSearch() {
+  const input = document.getElementById('searchInput');
+  if (!input) return;
+
+  input.addEventListener('input', function () {
+    const query = this.value.toLowerCase();
+    console.log("Searching for:", query);
+
+    const items = [
+      ...document.querySelectorAll('.card'),
+      ...document.querySelectorAll('.opinion'),
+      ...document.querySelectorAll('.match-highlights li'),
+      ...document.querySelectorAll('.fan-zone blockquote'),
+      ...document.querySelectorAll('.legends-corner li'),
+      ...document.querySelectorAll('.stadium-spotlight p'),
+      ...document.querySelectorAll('.events-calendar li'),
+      ...document.querySelectorAll('.hero p')
+    ];
+
+    items.forEach(item => {
+      const text = item.textContent.toLowerCase();
+      item.style.display = text.includes(query) ? 'block' : 'none';
+    });
+  });
+}
+
+// 🎬 Reveal full sections on scroll (modular)
+function setupScrollRevealSections() {
+  const sections = document.querySelectorAll('section');
+
+  const revealOnScroll = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add('visible');
+      observer.unobserve(entry.target);
+    });
+  }, {
+    threshold: 0.3,
+    rootMargin: "0px 0px -50px 0px"
+  });
+
+  sections.forEach(section => revealOnScroll.observe(section));
+}
+
+// 🚀 Initialize added features
+document.addEventListener('DOMContentLoaded', () => {
+  setupLiveSearch();
+  setupScrollRevealSections();
+});
+
+
+document.getElementById("categorySelect").addEventListener("change", function () {
+    const selectedPage = this.value;
+    window.location.href = selectedPage;
+  });
+
+  </script>
+
+</body>
+</html>

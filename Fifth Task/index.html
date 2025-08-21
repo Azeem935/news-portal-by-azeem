@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global News Portal</title>
+ 
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+  <header>
+    <h1>Global News Portal</h1>
+    <span>  <button id="darkModeToggle" aria-label="Toggle dark mode">🌙</button></span>
+    <p>Your source for the latest headlines from around the world</p>
+  </header>
+  
+  <nav class="navbar">
+    <div class="nav-brand">🌐 News</div>
+    <button class="nav-toggle" onclick="toggleMenu()">☰</button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="politics.html">Politics</a></li>
+      <li><a href="technology.html">Technology</a></li>
+      <li><a href="sports.html">Sports</a></li>
+      <li><a href="entertainment.html">Entertainment</a></li>
+    </ul>
+  </nav>
+  <div class="category-switcher">
+    <label for="categorySelect">🗂️ Browse Categories:</label>
+    <select id="categorySelect">
+      <option value="index.html">🏠 Home</option>
+      <option value="politics.html">🗳️ Politics</option>
+      <option value="technology.html">💻 Technology</option>
+      <option value="sports.html">🏅 Sports</option>
+      <option value="entertainment.html">🎬 Entertainment</option>
+    </select>
+  </div>
+
+  <div id="loader" class="spinner"></div>
+  <section class="search-section">
+    <input type="text" id="searchInput" placeholder="Search news..." />
+  </section>
+  <main>
+    <section id="top-headlines">
+      <h2>Top Headlines</h2>
+
+      <div class="article">
+        <h3>Pakistan Floods Claim Over 250 Lives in KP and Gilgit Baltistan</h3>
+        <p>
+          Torrential monsoon rains have devastated northern Pakistan, triggering flash floods and landslides across Khyber Pakhtunkhwa and Gilgit Baltistan. Entire villages have been submerged, roads washed away, and communication lines severed. Rescue teams are battling harsh conditions to reach stranded families, while the government declares a state of emergency.
+        </p>
+      </div>
+
+      <div class="article">
+        <h3>Relief Helicopter Crashes in Mohmand, All Crew Members Dead</h3>
+        <p>
+          A Pakistan Army helicopter engaged in flood relief operations crashed in Mohmand district, killing all five personnel onboard. The incident has sparked nationwide mourning, with flags flying at half-mast. Authorities are investigating the cause, while tributes pour in for the fallen heroes.
+        </p>
+      </div>
+
+      <div class="article">
+        <h3>Swat Faces Massive Power Outage as Grid Stations Flooded</h3>
+        <p>
+          Swat Valley is experiencing widespread power outages after floodwaters entered grid stations and washed away transmission poles. Residents are struggling without electricity, clean water, or mobile signals. Emergency teams are working to restore basic infrastructure amid ongoing rainfall.
+        </p>
+      </div>
+    </section>
+
+    <section id="latest-updates">
+      <h2>Latest Updates</h2>
+
+      <div class="article">
+        <h3>PM Orders DNA Testing for Unidentified Flood Victims</h3>
+        <p>
+          Prime Minister Shehbaz Sharif has directed health authorities to conduct DNA testing for unidentified victims of the recent floods. The move aims to help grieving families find closure and ensure proper documentation. Relief camps have been set up across KP and AJK to support displaced citizens.
+        </p>
+      </div>
+
+      <div class="article">
+        <h3>PTI Chairman Warns of Rising Death Toll in Buner</h3>
+        <p>
+          PTI Chairman Barrister Gohar Khan has expressed grave concern over the situation in Buner, where over 200 people have died. He warned that the death toll may rise further due to collapsed infrastructure and delayed rescue efforts. The party has called for immediate international assistance.
+        </p>
+      </div>
+      <div class="article">
+        <h3>KP Govt Releases Rs800m Relief Fund for Flood-Hit Areas, Rs500m for Buner</h3>
+        <img src="/images/alone man.jpg" alt="">
+        <p>
+          As flash floods continue to ravage Khyber Pakhtunkhwa, the provincial government on Monday released Rs800 million in relief funds for all affected districts, with an additional Rs500 million specifically allocated for the worst-hit Buner. The catastrophic floods have claimed at least 325 lives in KP alone, with 217 deaths and 120 injuries reported in Buner district. Shangla follows with 36 fatalities and 21 injuries. According to the KP Provincial Disaster Management Authority (PDMA), 95 houses have been damaged—55 completely destroyed—and dozens of schools have suffered partial collapse. The funds aim to accelerate rescue, rehabilitation, and infrastructure restoration across the region.Mansehra and Bajaur recorded 24 and 21 deaths, respectively, and five injuries each. Swat reported 17 deaths and two injuries, but witnessed the heaviest damage to infrastructure as 219 houses have been either fully or partially damaged and 163 cattle have perished.
+
+          Five people died and three people were injured in Lower Dir due to flash floods and thunder strikes, while 100 cattle perished. Three people died in Battagram due to flash floods, while a roof collapse in Nowshera killed two people.
+        </p>
+      </div>
+      <div class="article">
+        <h3>Restoration of flood-affected areas a national obligation: Tarar</h3>
+        <img src="/images/car at houses.jpg" alt="">
+        <p>
+            Information Minister Attaullah Tarar said that rescue, relief and restoration of flood-affected areas was a “national obligation”, assuring that the federal and provincial governments would work collectively to fulfil this responsibility.
+
+            During a media briefing alongside Climate Change Minister Musaddiq Malik and NDMA Chairman Lieutenant General Inam Haider in Islamabad, Tarar said an important meeting was chaired by Prime Minister Shehbaz Sharif today on the recent flooding caused by monsoon rains.
+            
+            Tarar said ongoing rescue and relief activities in flood hit areas was discussed in the meeting and improved coordination was ongoing with provincial governments.
+            
+            He noted that several meetings were held at the National Command and Control Center before the monsoon rains hit, with representatives of all provincial governments participating.
+            
+            “Data has been regularly provided by the NDMA to the relevant authorities through the Early Warning System,” Tarar said.
+            
+            He added that relief activities were being carried out by the armed forces and other organisations in flood-affected areas across KP, Azad Jammu and Kashmir and Gilgit-Baltistan.
+            
+            The communications secretary was already in GB to supervise restoration of the Skardu-Gilgit Road, Tarar said, while the National Highway Authority chairman was in Malakand Division leading efforts to restore roads.
+            
+            Similarly, Tarar said, Federal Minister for Kashmir Affairs and Gilgit Baltistan Amir Muqam was also in Buner monitoring rescue and relief work.
+            
+            “The prime minister has instructed the ministers for water, power and communications to ensure their presence in these areas to personally monitoring restoration work of infrastructure related to their respective ministries,” he said.
+            
+            
+        </p>
+
+      </div>
+      <div class="article">
+        <h3>Balochistan Chief Minister Sarfraz Bugti on Monday said security agencies had arrested an alleged “would-be suicide bomber” as they foiled a terrorist attack on Independence Day.</h3>
+        <p>
+            The security situation in Balochistan has worsened in recent months, as terrorists, long involved in a low-level insurgency, have stepped up the frequency and intensity of their attacks. The banned so-called Balochistan Liberation Army (BLA), in particular, has adopted new tactics to inflict higher casualties and directly target Pakistani security forces.
+
+            Addressing a press conference in Quetta alongside other top officials, the chief minister said: “On August 14, the suicide bombers had planned to target innocent citizens who were celebrating Independence Day.”
+            
+            He commended the security agencies, the Balochistan Counter-Terrorism Department, and the police for saving the province from “huge destruction”.
+            
+            CM Bugti then aired a recorded statement of a highly educated man who had been arrested for his alleged involvement in facilitating terrorists.
+            
+            In the video, the man, working as a lecturer at Balochistan University, confessed to having links with terrorist groups. After airing the man’s statement, CM Bugti noted that the information being shared was “not in great detail”, so as not to sabotage ongoing investigations.
+            
+            He recalled that the Nov 2024 Quetta Railway Station bombing, in which “32 precious lives were lost and 50-plus were injured”, and explained how the arrested lecturer was allegedly involved in facilitating the attack.
+            
+            “He (the lecturer) had him (the suicide bomber) sit on a motorcycle and dropped him near the railway station, and after that, handed him over to another handler about one kilometre away from the railway station,” Bugti said.
+        </p>
+      </div>
+      <div class="article">
+        <h3>Modern technology to be introduced to minimise risk of mudslides, floods, says KP CM</h3><br>
+
+        <p>Chief secretary Shahab Ali Shah, secretaries of various departments, members of the provincial assembly, and officials of the civil administration were in attendance.
+
+            Officials briefed the chief minister on the losses caused by recent floods across Swat and Malakand division.
+            
+            Speaking to the media after the meeting, CM Gandapur said the loss of human lives was the greatest tragedy, which could never be compensated, but assured that financial and material damage would be fully addressed.
+            
+            “The government will not abandon the affected families. Whatever losses people have suffered will be compensated,” he said, adding that restoring public trust in government commitments was crucial, since broken promises in the past had eroded that trust.
+            
+            The chief minister stressed that the provincial government was committed to delivering justice to all citizens, stating: “The state will play the role of a mother and give everyone their due rights.”
+            
+            Mr Gandapur announced that a survey had been launched in vulnerable areas to introduce advanced technology aimed at reducing the risk of mudslides and stone-laden floods. The technology, already in use in countries like Switzerland and India, would now be implemented in Khyber Pakhtunkhwa.
+            
+            He said reconstruction of damaged houses would be carried out by the government, but only in safe locations to avoid repeat losses. He also pointed to encroachments as a major factor behind flood devastation. “Encroachments have existed for years, and despite operations, stay orders from courts worsened the situation,” he said, urging people to refrain from new encroachments and to show patience.
+            
+            The CM vowed that encroachments would be removed without discrimination, citing the example of Dera Ismail Khan, where a similar operation was successfully conducted. “With the cooperation of the public and political parties, the same process will be extended to Swat and the rest of the province,” he added.
+            
+            Mr Gandapur further announced the restoration of electricity networks, hospitals, and roads damaged in the floods, assuring that both human and financial losses would be compensated in full. “This is the right of the people, not a favour,” he said, while also calling upon the federal government to extend support. He appreciated the condolence messages and assurances received from the prime minister and other senior federal
+            
+            Highlighting the province’s financial stability, the chief minister said the KP government was no longer weak. “There was a time when we did not even have resources to pay one month’s salaries. Today, the situation has changed,” he remarked. He revealed that after assuming office, the provincial government established an endowment fund that has now grown to Rs190 billion, generating a daily income of Rs850 million.
+            
+            “We have sufficient resources and do not need foreign aid. The government will rehabilitate flood victims and compensate damage from its own funds,” he declared.</p>
+      </div>
+      <div class="article">
+        <h3>Situationer: As monsoon wreaks havoc, only fraction of cars insured</h3>
+        <img src="/images/car with two man.jpg" alt="">
+        <p>
+            WITH the country currently in the grip of cataclysmic monsoon rains, every passing day brings with it more reports of deaths and destruction.
+
+Among the losses to life and property, images of damaged veh­icles — either swept up by floodwaters or battered by falling debris — have become a common sight.
+
+Alongside lost homes, businesses and civic amenities, damage to vehicles constitutes a major chunk of the losses incurred by people.
+
+According to insurance experts, however, the uptake for motor vehicle coverage in the country stands at a paltry 2.5 per cent.
+
+Take, for example, the freak hailstorm that inflicted damages worth millions of rupees to vehicles across Islamabad earlier this year. According to data from around 12 insurance and takaful operators (out of a total of 28 providers), around 958 vehicle repair claims were received in the wake of the hailstorm from the federal capital and its adjoining areas in April 2025.
+
+Sources in the motor insurance sector put the gross claim amount at around Rs144 million.
+
+But this figure only includes those who had insurance and opted to go that route. Given the massive bills and long queues for repair work in the aftermath of the hailstorm, many vehicle owners chose to avail themselves of offers for discounted repairs offered by carmakers themselves, or took their business to their local ‘ustaad’.
+
+According to an insurance company official, who asked not to be identified as he is not authorised to speak to the media, his company had served around 250 customers, with a total payment estimate of around Rs30 million during FY25 alone.
+
+A majority of these claims came from Islamabad and its surrounding areas, and most were for saloon or sedan vehicles.
+
+He highlighted that parts shortages, such as the one created in the wake of the Islamabad hailstorm, put pressure on supply, leading to a price rise. This is exactly what was witnessed in the case of the damages from the hailstorm, with workshops and technicians making hay due to the sky-high demand for parts such as windshields.
+
+The insurance official claimed that this practice also hurts their company, which tries to find the best possible deal for their clients.
+
+Insurance ‘not the norm’
+
+Sectoral experts say that most car owners in Pakistan do not have coverage.
+
+Saqib Zeeshan, CEO of Pak-Qatar General Takaful, told Dawn that out of the millions of vehicles on Pakistan’s roads, only about three million were covered by any insurance or takaful policy.
+
+“This is despite the presence of 28–30 companies offering attractive insurance and takaful packages. Unfortunately, we are not an insurance-oriented society, and a large segment of the population lacks basic awareness about the concept of insurance,” he said.
+
+He added that Pak-Qatar received over 60 vehicle claims from the April hailstorm alone.
+
+“Currently, we have around 14,000 vehicles insured under Motor Takaful, which is still a small number compared to major players who handle significantly larger volumes and claims.”
+
+Lack of coverage
+
+With widespread flooding, heavy rains, and landslides ravaging the northern parts of the country, thousands of affected vehicle owners are likely to submit claims to their respective insurers, in the hopes of compensation.
+
+But industry experts say that a large chunk of those affected would not have insurance to begin with. Non-customs paid vehicles, such as those widely used across the Malakand Division — in areas such as Swat, Dir, Chitral — are usually not insured. The same goes for many of the private vans or buses plying on inter-city routes, save for those that are part of organised fleets.
+
+However, Mr Zeeshan pointed out that vehicles financed through banks and leasing companies are compulsorily insured until the loan matures, i.e. the instalments are paid off.
+
+“However, only 20pc of customers continue insurance coverage after the financing period ends. Once the loans are repaid, the insurance penetration drops drastically,” he said.
+
+In his view, most people in Pakistan view insurance or takaful as an expense rather than an investment. Given the country’s propensity towards climatic disasters, this thinking needs to change.
+
+Even though most insurance companies offer both comprehensive and third-party liability coverage, Mr Zeeshan says the latter, which is available for a nominal premium, is often ignored.
+
+In addition, while natural disasters are now covered under comprehensive policies, certain insurance packages — especially those with low premiums — still don’t insure against force majeure (unforeseen circumstances or acts of God).
+
+To address this issue, the industry has urged the government to make motor insurance mandatory. Countries in the Gulf Cooperation Council (GCC), such as Saudi Arabia and the UAE, have already made vehicle insurance mandatory.
+
+“Only the government has the authority to enforce such a policy,” Mr Zeeshan said.
+
+As per data from the Insurance Association of Pakistan (IAP), the gross premium contribution for the motor insurance segment reached Rs36.18 billion in 2024, up from Rs34bn in 2023. However, IAP does not maintain segregated data on vehicle claims resulting from natural calamities.
+        </p>
+      </div>
+      <div class="article">
+        <h3>Sindh govt says arrangements in place as parts of Karachi receive light rain</h3>
+        <img src="/images/mens.jpg" alt="">
+        <h3>Sindh Minister for Local Government Saeed Ghani said that arrangements were in place to deal with the upcoming monsoon spell as parts of Karachi received light rain on Monday.</h3>
+        <p>Monsoon rains fall across the region from June to September, offering respite from the summer heat and are crucial to replenishing water supplies. However, heavy downpours also trigger deadly floods, landslides and displacement, particularly in vulnerable, poorly drained, or densely populated areas. Under the influence of approaching monsoon currents, Karachi experienced hot and humid weather on Sunday and the Meteorological Depart­ment forecast rain with thunderstorms for today in the city.
+
+          Speaking at a press conference in Karachi, Ghani said: “There are chances of severe rains in Sindh, especially in Karachi, with chances of urban flooding … regarding that, whatever is humanely possible, which a person, government or institution can do, we have made those arrangements.”
+          
+          
+          He added that instructions were given earlier as well about rain preparations and that the Sindh chief minister had directed the same in a meeting today as well.
+          
+          According to the Met Office, rainfall as of 8am at Surjani Town was recorded at 2.4 millimetres, 1.5mm in Gulshan-i-Maymar and Korangi and 1mm at Faisal airbase, while trace rainfall was recorded in Gulshan-i-Hadeed, University Road, Jinnah Terminal, North Karachi, Keamari, Nazimabad and old airport area.
+          
+          An update by the department at 6:51pm said that light to moderate rain-wind/thundershower was expected in Karachi and the surrounding coastal areas in the next one to three hours.
+          
+          According to a notice by the Sindh Provincial Disaster Management Authority, the Pakistan Meteorological Depart­ment (PMD) has forecast widespread rain and thunderstorms with few moderate to isolated heavy or very heavy falls in the province till August 22, with occasional gaps.
+          
+          The rains are likely in Karachi, Hyderabad, Jacobabad, Shikarpur, Larkano, Kamber Shahdadkot, Ghotki, Sukkur, Kashmore, Naushahro Feroze, Dadu, Mirpurkhas, Sanghar, Khairpur, Shaheed Benazirabad, Jamshoro, Tando Muhammad Khan, Tando Allahyar, Umerkot, Thatta, Sujawal, Badin, Matiari and Tharparker from today.
+          
+          Ghani added that local councils were told to mobilise their resources and make arrangements specifically for chronic problem areas so citizens face minimal difficulties during the rain.
+          
+          He also requested people and opposition parties to avoid criticism at a time of calamity, but to focus on helping the people, adding, “later you can criticise whatever is lacking you see — but when there’s a difficulty, I think we should show solidarity”.
+          
+          Last month, at least six people lost their lives in different incidents of roof collapse, electrocution and drowning during widespread rains in many districts of Sindh.
+          
+          Sindh CM puts local bodies, administration on high alert
+          Meanwhile, Sindh Chief Minister Syed Murad Ali Shah chaired an emergency meeting to oversee preparations for the monsoon rains expected to impact Karachi and other parts of the province.
+          
+          A press release from his office said CM Shah put all the local bodies, administration and traffic police on high alert, and directed them to strengthen coordination between the relevant departments and organisations.
+          
+          The meeting, held at CM House, was attended by Ghani, Karachi Mayor Barrister Murtaza Wahab, Sindh Chief Secretary Asif Hyder Shah, Principal Secretary to Chief Minister Agha Wasif, Finance Secretary Fayaz Jatoi, Local Government Secretary Waseem Shamshad, and others.
+          
+          
+          The chief minister focused on ensuring the city’s infrastructure was ready to handle the anticipated downpour, while the mayor briefed him on ongoing efforts to improve drainage systems at 44 nullahs and critical choking points across Karachi, with approximately 150 drains under the control of towns undergoing cleaning to facilitate the smooth flow of rainwater.
+          
+          CM Shah directed Ghani and Wahab to take all necessary steps to minimise disruption and ensure the safety of citizens. Wahab told the chief minister that, in addition to drainage improvements, 120 suction vehicles from the water board were strategically positioned in low-lying areas to clear any accumulated water quickly.
+          
+          He said the Karachi Metropolitan Corporation (KMC) was also working closely with the Provincial Disaster Management Authority (PDMA) to secure additional machinery if needed, demonstrating a coordinated approach to disaster management.
+          
+          Directing all relevant agencies to remain vigilant, the chief minister instructed local government bodies to maintain a fully mobilised presence during the rain spell. He emphasised the importance of proactive measures by the city administration and urged the traffic police to ensure smooth traffic flow, even in the event of heavy downpours.
+          
+          “The provincial government is fully prepared to manage the rains, but constant vigilance and rapid response from all departments are crucial,” the Sindh chief minister asserted. “Our priority is to protect our citizens and minimise any potential damage caused by the monsoon.”
+          
+          Residents were advised to stay informed about weather updates and take necessary precautions to ensure their safety during the anticipated rainfall.</p>
+      </div>
+      <div class="article">
+        <h3>Several more lives lost as rains continue to afflict KP</h3>
+        <img src="/images/forest.jpg" alt="">
+        <h3>Many go missing as torrential downpour triggers landslides, flash floods; 17 dead in Swabi, two in Nowshera
+          • NDMA chief says monsoon season to remain ‘precarious’ in August; more spells expected, but respite will come in late September
+          • Federal cabinet will donate salaries to aid flood victims, says PM Shehbaz</h3>
+          <p>SWABI: At least 17 people were killed on Monday in a heavy downpour that submerged houses, swept away people, and caused landslides in several parts of the Swabi district, besides claiming two lives in Nowshera district as well.
+
+            Swabi Deputy Commissioner Nasrullah Khan said 12 houses had been submerged in Dalori village due to a ‘cloudburst’ while landslides also occurred in the hilly terrain of the district. He said that the downpour and landslides wreaked havoc in the Gadoon Amazai mountainous belt, adding that flash floods inundated several houses and swept away many people in the area.
+            
+            The DC could not confirm the death toll due to information constraints, giving rise to conflicting figures.
+            
+            Provincial Irrigation Minister Aqibullah Khan, who visited flood-hit Dalori, said over 20 people had been killed in the downpour and at least 33 people were still missing. However, the Provincial Disaster Management Authority said 13 people, including two in Nowshera, were killed and 20 were injured in the torrential rain. Meanwhile, Rescue 1122 spokesperson Bilal Faizi said 11 deaths were confirmed in Swabi, while, as per locals, 17 to 18 people were missing.
+            
+            It seems the death toll is likely to balloon, as a large number of people remained missing by the time this report went to press. Since Friday, the rainfall has claimed at least 341 lives across Khyber Pakhtunkhwa, as per the official figure.
+            
+            Amjad Gul, a local, said that many houses had collapsed due to the ‘cloudburst’. Nine bodies have been pulled out, while the rest were still under the rubble, he said. “It is not an easy task to pull people out of the rubble in Dalori. There is a dire need for an excavator. It seems that many people have been buried under the rubble,” he said.
+            
+            The Met Department did not confirm if it was a cloudburst in Swabi, nor did it issue any statement about how much it rained in the district.
+            
+            In another Sar Koi Payan, four people were killed after a house collapsed, burying nine members of a family. It was learned that the family had recently returned from Karachi and they were sitting in their newly built house, which suddenly collapsed in the rain. Local people pulled out the bodies from the debris and dispatched them to the Topi tehsil headquarters hospital.
+            
+            
+            Two Afghan refugees also lost their lives in a roof-collapse incident, while, in a separate incident, two people drowned in the floodwater of Karnal Sher Khan Kali nullah.
+            
+            Due to the downpour, the rainwater entered houses in the district, forcing people to take refuge on the roofs and move to safer locations, while the inundation and landslides completely paralysed the routine life in the region.
+            
+            Several vehicles were buried under debris due to ‘mountain sliding’ in Bada village in the worst-hit Gadoon Amazai belt. The electricity system completely collapsed, crops were destroyed, and roads could no longer be used by people.
+            
+            ‘Precarious’ August
+            
+            Separately, National Disa­­ster Management Auth­o­rity (NDMA) Chairman Lt Gen Inam Haider on Monday warned that monsoon conditions would remain precarious until the end of August, with normalisation expected by late September, state-run APP reported.
+            
+            
+            </p>
+      </div>
+    </section>
+  </main>
+  
+  <footer>
+    <p>&copy; 2025 Global News Portal. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

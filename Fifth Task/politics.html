@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Politics | Global News Portal</title>
+  <link rel="stylesheet" href="politics.css">
+</head>
+<body>
+<nav class="navbar">
+    <div class="nav-brand">🌐 News</div>
+    <button class="nav-toggle" onclick="toggleMenu()">
+      <svg width="24" height="24" fill="white" viewBox="0 0 24 24">
+        <rect y="4" width="24" height="2"/>
+        <rect y="11" width="24" height="2"/>
+        <rect y="18" width="24" height="2"/>
+      </svg>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="politics.html" class="active">Politics</a></li>
+      <li><a href="technology.html">Technology</a></li>
+      <li><a href="sports.html">Sports</a></li>
+      <li><a href="entertainment.html">Entertainment</a></li>
+    </ul>
+  </nav>
+  <div class="category-switcher">
+    <label for="categorySelect">🗂️ Browse Categories:</label>
+    <select id="categorySelect">
+      <option value="index.html">🏠 Home</option>
+      <option value="politics.html">🗳️ Politics</option>
+      <option value="technology.html">💻 Technology</option>
+      <option value="sports.html">🏅 Sports</option>
+      <option value="entertainment.html">🎬 Entertainment</option>
+    </select>
+  </div>
+  <section class="search-section">
+    <input type="text" id="searchInput" placeholder="Search news..." />
+  </section>
+  <main class="content politics-page">
+    <section class="hero">
+      <h1>Latest in Politics</h1>
+      <p>Stay updated with national debates, global diplomacy, and policy shifts shaping the future.
+        “Can a governor be engaged in politics? The governor should not carry any political party’s flag. He should raise the slogan of Pakistan Zindabad, not represent any party,” he said while talking to the media after laying the foundation stone of several development projects in district Korangi.
+
+In a thinly veiled comment on Mr Tessori’s recent statement in which he talked about the comeback of “bhai” and revival of “old MQM”, the mayor said: “Perhaps he thinks of himself as ‘Bhai’.”
+
+As the office of the president and provincial governors are apolitical, the mayor called on the prime minister to take immediate notice of the matter.
+
+Mr Wahab said that public convenience and urban development were his top priorities.
+
+“Today’s Karachi is transforming under the leadership of Bilawal Bhutto-Zardari, and the people are expressing full confidence in the Pakistan Peoples Party,” he said. “We are serving without discrimination or bias. We don’t care which UC belongs to whom; if there are Karachiites living there, then Bilawal Bhutto’s party will certainly deliver services. We see serving the people of Korangi as an opportunity and are passionate about it,” he added.
+
+Mayor Wahab highlighted that after 22 years, an improvement was finally made to Karachi’s water infrastructure with the completion of the new Hub Canal. “This revolutionary step is a slap in the face of those who only made promises.”
+
+He added that the K-IV project has already been inaugurated five times by five different prime ministers and leaders, but no real progress was made. “Now, your jiyala mayor and deputy mayor have completed the new Hub Canal, which is improving water supply for citizens. We’ve also begun work on the parts of the K-IV project assigned to our government.”
+
+He also mentioned that a center for special children has been established in Korangi by the PPP, where free medical treatment, education, and training are provided.
+
+With the support of the Sindh chief minister and the health minister, a Child Health Center has also been set up in the district, fully equipped by the PPP government, he said.
+      </p>
+    </section>
+    <section class="grid-articles">
+      <article class="card">
+        <img src="/images/election.jpg" alt="Election Debate">
+        <h2>Election 2025: Heated Debates Begin</h2>
+        <p>Major parties clash over economic reforms, education policy, and foreign relations as the campaign trail intensifies.</p>
+        <a href="#">Read More →</a>
+      </article>
+
+      <article class="card">
+        <img src="/images/images.jpg" alt="Parliament Session">
+        <h2>Parliament Passes New Tax Bill</h2>
+        <p>The controversial bill aims to restructure income brackets and introduce digital tax reforms. Opposition calls for review.</p>
+        <a href="#">Explore Bill Details →</a>
+      </article>
+
+      <article class="card">
+        <img src="images/diplomacy (1).jpg" alt="Diplomatic Talks">
+        <h2>Pakistan–China Strategic Dialogue</h2>
+        <p>Leaders discuss trade expansion, regional security, and tech collaboration in a high-level diplomatic summit.</p>
+        <a href="#">View Summit Highlights →</a>
+      </article>
+
+      <article class="card">
+        <img src="/images/diplomacy (2).jpg" alt="Public Protest">
+        <h2>Nationwide Protests Over Fuel Prices</h2>
+        <p>Civil society and student unions rally across major cities demanding transparency and relief in energy tariffs.</p>
+        <a href="#">See Protest Coverage →</a>
+      </article>
+    </section>
+
+    <section class="opinion-section">
+      <h2>Opinion & Editorials</h2>
+      <div class="opinion">
+        <h3>Why Youth Engagement Matters in Politics</h3>
+        <p>With over 60% of the population under 30, political parties must rethink their outreach strategies to connect with Gen Z voters.</p>
+      </div>
+      <div class="opinion">
+        <h3>Federalism vs. Centralization: A Policy Tug-of-War</h3>
+        <p>Experts weigh in on the balance of power between provinces and the federal government amid recent legislative changes.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Global News Portal | All rights reserved.</p>
+  </footer>
+
+  
+  
+  <script>
+    // 🌐 Toggle mobile navigation
+    function toggleMenu() {
+      const navLinks = document.getElementById('navLinks');
+      if (navLinks) navLinks.classList.toggle('active');
+    }
+    
+    // 🔍 Live search across .card and .opinion
+    function setupLiveSearch() {
+      const input = document.getElementById('searchInput');
+      if (!input) return;
+    
+      input.addEventListener('input', function () {
+        const query = this.value.toLowerCase();
+        console.log("Searching for:", query);
+    
+        const items = [
+          ...document.querySelectorAll('.card'),
+          ...document.querySelectorAll('.opinion'),
+          ...document.querySelectorAll('.hero p')
+        ];
+    
+        items.forEach(item => {
+          const text = item.textContent.toLowerCase();
+          item.style.display = text.includes(query) ? 'block' : 'none';
+        });
+      });
+    }
+    
+    // 🎬 Reveal sections on scroll
+    function setupScrollReveal() {
+      const sections = document.querySelectorAll('section');
+    
+      const revealOnScroll = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        });
+      }, {
+        threshold: 0.3,
+        rootMargin: "0px 0px -50px 0px"
+      });
+    
+      sections.forEach(section => revealOnScroll.observe(section));
+    }
+    
+    // 🚀 Initialize all features
+    document.addEventListener('DOMContentLoaded', () => {
+      setupLiveSearch();
+      setupScrollReveal();
+    });
+
+    document.getElementById("categorySelect").addEventListener("change", function () {
+    const selectedPage = this.value;
+    window.location.href = selectedPage;
+  });
+
+    </script>
+</body>
+</html>

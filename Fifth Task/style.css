@@ -1,0 +1,333 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: black;
+  }
+
+  header {
+    background-color: #003366;
+    color: #fff;
+    padding: 30px;
+    text-align: center;
+    border-bottom: 2px solid #2855e9a2;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  header p {
+    font-size: 1.1rem;
+  }
+  
+  .navbar {
+    background-color: #4abde0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    position: relative;
+  }
+  
+  .nav-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color:black;
+  }
+  
+  .nav-toggle {
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 130px;
+  }
+  
+  .nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links li a:hover {
+    color: #ffcc00;
+  }
+  
+  main {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+  }
+  
+  section h2 {
+    font-size: 2rem;
+    color: #003366;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 8px;
+    font-weight: 700;
+  }
+  
+  .article {
+    background-color: #ffffff;
+    padding: 25px;
+    border-left: 3px solid #4abde0;
+    margin-bottom: 35px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .article:hover {
+    transform: translateY(-4px);
+    cursor: pointer;
+    transition: all 5s ease ease-in-out;
+    border-left: 3px solid #e63946;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+  }
+  
+  .article h3 {
+    font-size: 1.6rem;
+    color: #e63946;
+    margin-bottom: 15px;
+    font-weight: 600;
+    line-height: 1.3;
+  }
+  
+  .article p {
+    font-size: 1rem;
+    color: #444;
+    text-align: justify;
+    line-height: 1.8;
+    margin-top: 10px;
+  }
+  
+  .article img {
+    width: 100%;
+    max-height: 350px;
+    object-fit: cover;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  }
+  
+  footer {
+    text-align: center;
+    padding: 15px;
+    background-color:black;
+    color: #fff;
+    margin-top: 40px;
+    font-size: 0.9rem;
+  }
+footer:hover {
+    background-color: #0a32b4;
+    cursor: pointer;
+    transition: all 0.4s ease-in;
+  }
+
+  /* 🌙 Dark Mode Toggle Button */
+  #darkModeToggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 1.4rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #02311f;
+    transition: color 0.3s ease;
+  }
+
+  .category-switcher {
+    text-align: center;
+    margin: 30px auto;
+    padding: 10px;
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(0, 255, 255, 0.3);
+    width: fit-content;
+  }
+  
+  .category-switcher label {
+    color: #fff;
+    font-weight: bold;
+    margin-right: 10px;
+    font-size: 1.1rem;
+  }
+  
+  #categorySelect {
+    padding: 10px 14px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: none;
+    background-color: #ffffff;
+    color: #333;
+    box-shadow: 0 0 8px rgba(0, 255, 255, 0.2);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  #categorySelect:hover {
+    box-shadow: 0 0 12px rgba(0, 255, 255, 0.5);
+  }
+
+  
+  #darkModeToggle:hover {
+    color: #0f1f16;
+  }
+
+  body.dark-mode {
+    background-color: #121212;
+    color: #f0f0f0;
+  }
+  
+  header.dark-mode {
+    background-color: #1e1e1e;
+  }
+  
+  #darkModeToggle.dark-mode {
+    color: #f0f0f0;
+  }
+  @media (max-width: 768px) {
+    .nav-toggle {
+      display: block;
+    }
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px;
+    background-color: white;
+    position: relative;
+    z-index: 1000;
+  }
+  .nav-toggle {
+    font-size: 28px;
+    background: none;
+    border: none;
+    color: black;
+    cursor: pointer;
+    display: none;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 24px;
+  }
+  
+  .nav-links li a {
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links li a:hover {
+    color: #0066ffc5;
+    text-shadow: 0 0 5px #00ffff;
+  }
+  .search-section {
+    background: linear-gradient(to right, #fdf6f0, #eae2dc);
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    border-bottom: 1px solid #ddd;
+  }
+  
+  #searchInput {
+    font-family: 'Georgia', serif;
+    font-size: 18px;
+    padding: 12px 16px;
+    width: 90%;
+    max-width: 500px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    color: #333;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+  }
+  
+  #searchInput:focus {
+    outline: none;
+    border-color: #b85c38;
+    box-shadow: 0 0 10px rgba(184, 92, 56, 0.3);
+    background-color: #fffefc;
+  }
+
+  .floating-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 1.5rem;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  }
+  /* Optional: Smooth transition */
+  body {
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  @media (max-width: 768px) {
+    .nav-toggle {
+      display: block;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      position: fixed;
+      top: 0;
+      left: -100%;
+      width: 70%;
+      height: 100vh;
+      background-color: black;
+      padding-top: 80px;
+      padding-left: 30px;
+      transition: left 0.4s ease;
+      box-shadow: 2px 0 10px rgba(0, 255, 255, 0.521);
+    }
+  
+    .nav-links.active {
+      left: 0;
+    }
+  
+    .nav-links li {
+      margin-bottom: 20px;
+    }
+  
+    .nav-links li a {
+      font-size: 18px;
+      color: #fff;
+      text-decoration: none;
+      text-shadow: 0 0 8px rgba(0, 255, 255, 0.6);
+      transition: transform 0.3s ease, color 0.3s ease;
+    }
+  
+    .nav-links li a:hover {
+      color: #00ffff;
+      transform: translateX(5px);
+    }
+  }

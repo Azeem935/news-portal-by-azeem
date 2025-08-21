@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Entertainment | Global News Portal</title>
+  <link rel="stylesheet" href="entertainment.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-brand">🌐 News</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="politics.html">Politics</a></li>
+      <li><a href="technology.html">Technology</a></li>
+      <li><a href="sports.html">Sports</a></li>
+      <li><a href="entertainment.html" class="active">Entertainment</a></li>
+    </ul>
+  </nav>
+  <div class="category-switcher">
+    <label for="categorySelect">🗂️ Browse Categories:</label>
+    <select id="categorySelect">
+      <option value="index.html">🏠 Home</option>
+      <option value="politics.html">🗳️ Politics</option>
+      <option value="technology.html">💻 Technology</option>
+      <option value="sports.html">🏅 Sports</option>
+      <option value="entertainment.html">🎬 Entertainment</option>
+    </select>
+  </div>
+<section class="search-section">
+  <input type="text" id="searchInput" placeholder="Search news..." />
+</section>
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>🎬 Lights, Camera, Culture!</h1>
+    <p>From blockbuster premieres to viral music drops, dive into the stories that shape Pakistan’s entertainment scene.</p>
+  </section>
+
+  <!-- Featured Articles -->
+  <section class="grid-articles">
+    <article class="card">
+      <img src="/images/film-premium.jpg" alt="Film Premiere">
+      <h2>‘Karachi Nights’ Breaks Box Office Records</h2>
+      <p>Directed by Ayesha Malik, the film captures urban youth struggles with raw emotion and cinematic brilliance.</p>
+      <a href="#">Watch Trailer →</a>
+    </article>
+
+    <article class="card">
+      <img src="/images/music-award.jpg "alt="Music Awards">
+      <h2>Ali Zafar Wins Best Male Vocalist</h2>
+      <p>At the Pakistan Music Awards, Ali Zafar’s soulful performance earned him top honors and fan praise.</p>
+      <a href="#">See Full Winners List →</a>
+    </article>
+
+    <article class="card">
+      <img src="/images/drama-series.jpg" alt="Drama Series">
+      <h2>‘Dil Ki Duniya’ Sparks Online Debate</h2>
+      <p>The drama’s bold storyline on mental health has viewers applauding its realism and emotional depth.</p>
+      <a href="#">Episode Highlights →</a>
+    </article>
+
+    <article class="card">
+      <img src="/images/celebrity-news.jpg" alt="Celebrity News">
+      <h2>Mahira Khan Joins Global Streaming Project</h2>
+      <p>Pakistan’s beloved star signs on for an international thriller series set to release on Netflix next year.</p>
+      <a href="#">Read Interview →</a>
+    </article>
+  </section>
+
+  <!-- Fan Buzz -->
+  <section class="fan-zone">
+    <h2>💬 Fan Buzz</h2>
+    <blockquote>“Mahira’s new role looks intense! Can’t wait to binge it.” — Zara, Lahore</blockquote>
+    <blockquote>“Ali Zafar’s live performance gave me chills. Pure magic.” — Hamza, Islamabad</blockquote>
+    <blockquote>“Finally a drama that talks about real issues. Respect to the writers!” — Sana, Karachi</blockquote>
+  </section>
+
+  <!-- Editorials -->
+  <section class="opinion-section">
+    <h2>🧠 Media & Culture Commentary</h2>
+    <div class="opinion">
+      <h3>Why Pakistani Cinema Needs More Female Directors</h3>
+      <p>Industry experts highlight the creative vision and emotional depth women bring to storytelling.</p>
+    </div>
+    <div class="opinion">
+      <h3>The Rise of Streaming: Is TV Losing Its Grip?</h3>
+      <p>With platforms like Netflix and Tamasha gaining ground, traditional channels face a content revolution.</p>
+    </div>
+  </section>
+
+  <!-- Upcoming Releases -->
+  <section class="events-calendar">
+    <h2>📅 Upcoming Releases</h2>
+    <ul>
+      <li>🎬 ‘Zindagi 2.0’ — Film Release — Sept 5</li>
+      <li>🎵 Coke Studio Season 16 — Launch — Sept 12</li>
+      <li>📺 ‘Aangan’ Season Finale — Sept 20</li>
+      <li>🎭 Karachi Theatre Festival — Sept 25–30</li>
+    </ul>
+  </section>
+
+  <!-- Rising Stars -->
+  <section class="rising-stars">
+    <h2>🌟 Rising Stars</h2>
+    <ul>
+      <li>🎤 Hania Aslam — Indie pop sensation with viral hits</li>
+      <li>🎬 Bilal Qureshi — Young director redefining short films</li>
+      <li>🎭 Mehak Raza — Theatre actress winning hearts nationwide</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Global News Portal | All rights reserved.</p>
+  </footer>
+  <script src="entertainment.js">
+
+document.getElementById("categorySelect").addEventListener("change", function () {
+    const selectedPage = this.value;
+    window.location.href = selectedPage;
+  });
+
+  </script>
+
+</body>
+</html>

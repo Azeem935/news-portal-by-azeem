@@ -1,0 +1,448 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f4f6f9;
+    color: #222;
+    line-height: 1.6;
+  }
+  
+  .navbar {
+    background: #022d5c;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .nav-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .nav-toggle {
+    display: none;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: #fff;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #66ff00;
+  }
+  
+  .nav-links .active {
+    color: #fdee69;
+  }
+  
+  .nav-links a::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: #ff0037;
+    transition: width 0.3s ease;
+  }
+  
+  .nav-links a:hover::after {
+    width: 100%;
+  }
+  
+  .hero {
+    background: linear-gradient(to right, #00a6ff, #1f292b);
+    color: #fff;
+    padding: 4rem 3rem;
+    text-align: center;
+  }
+  
+  .hero h1 {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero p {
+    font-size: 1.5rem;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  
+  .grid-articles {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+  }
+  
+  .card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+  
+  .card h2 {
+    font-size: 1.2rem;
+    padding: 1rem;
+  }
+  
+  .card p {
+    padding: 0 1rem;
+    color: #555;
+  }
+  
+  .card a {
+    display: block;
+    padding: 1rem;
+    color: #0077b6;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .card a:hover {
+    text-decoration: underline;
+  }
+  
+  section h2 {
+    font-size: 2rem;
+    margin: 2rem 0 1rem;
+    text-align: center;
+    color: #eec510;
+    text-shadow: 0 0 4px rgba(244, 247, 248, 0.527);
+  }
+  
+  .match-highlights {
+    background: #e0f7fa;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 119, 182, 0.1);
+  }
+  
+  .match-highlights ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .match-highlights li {
+    padding: 0.5rem 0;
+    font-size: 1.1rem;
+    border-bottom: 1px solid #ccc;
+    transition: background 0.3s ease;
+  }
+  
+  .match-highlights li:hover {
+    background: #caf0f8;
+  }
+  
+  .fan-zone {
+    background: #fff;
+    padding: 2rem;
+    border-left: 6px solid #00b4d8;
+    margin-top: 2rem;
+  }
+  .search-wrapper {
+    background: linear-gradient(to right, #033eff, #eae2dc);
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .search-wrapper input {
+    font-family: 'Georgia', serif;
+    font-size: 17px;
+    padding: 10px 14px;
+    width: 90%;
+    max-width: 500px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: linear-gradient(to right, #00c573, #013f5c);
+    color:white;
+    box-shadow: 0 2px 6px rgba(12, 189, 50, 0.589);
+    transition: all 0.3s ease;
+  }
+  ::placeholder{
+    color: white;
+  }
+  
+  .search-wrapper input:focus {
+    outline: none;
+    border-color: #b85c38;
+    box-shadow: 0 0 10px rgba(184, 92, 56, 0.3);
+    background-color: #fffefc;
+  }
+
+
+
+  .spinner {
+    border: 6px solid #eee;
+    border-top: 6px solid #00f;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    margin: 20px auto;
+    display: none;
+  }
+  @keyframes spin {
+    to { transform: rotate(360deg); }
+  }
+  .opinion-section {
+    background: #f8f9fa;
+    padding: 2rem;
+  }
+  
+  .opinion {
+    background: #fff;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    border-left: 4px solid #0077b6;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  }
+  
+  .opinion h3 {
+    margin-bottom: 0.5rem;
+    color: #023e8a;
+  }
+  .opinion p {
+    color: #333;
+  }
+  
+  .legends-corner {
+    background: #edf6f9;
+    padding: 2rem;
+    border-radius: 10px;
+  }
+  
+  .legends-corner ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .legends-corner li {
+    padding: 0.5rem 0;
+    font-size: 1.1rem;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .legends-corner li:last-child {
+    border-bottom: none;
+  }
+  
+
+  .category-switcher {
+    text-align: center;
+    margin: 30px auto;
+    padding: 10px;
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(0, 255, 255, 0.3);
+    width: fit-content;
+  }
+  
+  .category-switcher label {
+    color: #fff;
+    font-weight: bold;
+    margin-right: 10px;
+    font-size: 1.1rem;
+  }
+  
+  #categorySelect {
+    padding: 10px 14px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: none;
+    background-color: #ffffff;
+    color: #333;
+    box-shadow: 0 0 8px rgba(0, 255, 255, 0.2);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  #categorySelect:hover {
+    box-shadow: 0 0 12px rgba(0, 255, 255, 0.5);
+  }
+
+  
+  .stadium-spotlight {
+    background: linear-gradient(to right, #204357, #00b4d8);
+    color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 12px rgba(0, 180, 216, 0.3);
+  }
+  
+  .stadium-spotlight p {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+  }
+  
+  .events-calendar {
+    background: #dfe2be;
+    padding: 2rem;
+    border-radius: 10px;
+  }
+  
+  .events-calendar ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .events-calendar li {
+    padding: 0.5rem 0;
+    font-size: 1.1rem;
+    border-bottom: 1px solid #ccc;
+    transition: background 0.3s ease;
+  }
+  
+  .events-calendar li:hover {
+    background: #d9f3ff;
+  }
+  /* Add to CSS */
+.card, .opinion, .match-highlights li {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s ease;
+  }
+  
+  .card.show, .opinion.show, .match-highlights li.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  footer {
+    background: #042c57;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 3rem;
+    font-size: 0.9rem;
+    box-shadow: 0 -2px 6px rgba(0,0,0,0.2);
+  }
+  
+  @media (max-width: 768px) {
+    .nav-toggle {
+      display: block;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      display: none;
+      background: #0d1b2a;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      width: 200px;
+      padding: 1rem;
+    }
+  
+    .nav-links.active {
+      display: flex;
+    }
+  }
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 1rem;
+    }
+  
+    .nav-brand {
+      font-size: 1.3rem;
+      margin-bottom: 0.5rem;
+    }
+  
+    .nav-toggle {
+      align-self: flex-end;
+      margin-bottom: 0.5rem;
+    }
+  
+    .hero {
+      padding: 2rem 1rem;
+    }
+  
+    .hero h1 {
+      font-size: 2rem;
+    }
+  
+    .hero p {
+      font-size: 1.1rem;
+    }
+  
+    .grid-articles {
+      grid-template-columns: 1fr;
+      padding: 1rem;
+    }
+  
+    .card img {
+      height: 160px;
+    }
+  
+    .search-wrapper input {
+      width: 100%;
+      font-size: 16px;
+    }
+  
+    section h2 {
+      font-size: 1.5rem;
+      margin: 1.5rem 0 1rem;
+    }
+  
+    .match-highlights li,
+    .events-calendar li,
+    .legends-corner li {
+      font-size: 1rem;
+    }
+  
+    .opinion h3 {
+      font-size: 1.1rem;
+    }
+  
+    .opinion p {
+      font-size: 0.95rem;
+    }
+  
+    .stadium-spotlight p {
+      font-size: 1rem;
+    }
+  
+    footer {
+      font-size: 0.8rem;
+      padding: 0.8rem;
+    }
+  }

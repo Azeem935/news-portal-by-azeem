@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Technology | Global News Portal</title>
+  <link rel="stylesheet" href="technology.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-brand">🌐 News</div>
+    <button class="nav-toggle" onclick="toggleMenu()">☰</button>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      
+      <li><a href="politics.html">Politics</a></li>
+      <li><a href="technology.html" class="active">Technology</a></li>
+      <li><a href="sports.html">Sports</a></li>
+      <li><a href="entertainment.html">Entertainment</a></li>
+    </ul>
+  </nav>
+  <div class="category-switcher">
+    <label for="categorySelect">🗂️ Browse Categories:</label>
+    <select id="categorySelect">
+      <option value="index.html">🏠 Home</option>
+      <option value="politics.html">🗳️ Politics</option>
+      <option value="technology.html">💻 Technology</option>
+      <option value="sports.html">🏅 Sports</option>
+      <option value="entertainment.html">🎬 Entertainment</option>
+    </select>
+  </div>
+  <section class="search-section">
+    <input type="text" id="searchInput" placeholder="Search news..." />
+  </section>
+  <main class="content technology-page">
+    <section class="hero">
+      <h1>Latest in Technology</h1>
+      <p>Explore breakthroughs in AI, cybersecurity, space tech, and digital innovation shaping tomorrow’s world.</p>
+    </section>
+    <section class="grid-articles">
+      <article class="card">
+        <img src="/images/ai-revolution.jpg" alt="AI Revolution">
+        <h2>AI Revolution: Machines That Learn Like Humans</h2>
+        <p>Researchers unveil neural networks that mimic human cognition, sparking debates on ethics and automation.</p>
+        <a href="#">Read More →</a>
+      </article>
+
+      <article class="card">
+        <img src="/images/quamtum-pictures.jpg" alt="Quantum Chip">
+        <h2>Quantum Leap: Pakistan’s First Quantum Processor</h2>
+        <p>Tech startup unveils prototype chip capable of solving complex equations in seconds, backed by global investors.</p>
+        <a href="#">Explore Details →</a>
+      </article>
+
+      <article class="card">
+        <img src="/images/cyber-S.jpg" alt="Cybersecurity">
+        <h2>Cybersecurity Alert: 2M Devices Vulnerable</h2>
+        <p>Experts warn of a major vulnerability in IoT devices, urging manufacturers to' patch firmware immediately.</p>
+        <a href="#">View Report →</a>
+      </article>
+
+      <article class="card">
+        <img src="/images/space-tech.jpg" alt="Space Tech">
+        <h2>SpaceX & SUPARCO Collaborate on Satellite Launch</h2>
+        <p>Pakistan’s space agency partners with SpaceX to deploy a new weather satellite into orbit by 2026.</p>
+        <a href="#">Launch Timeline →</a>
+      </article>
+    </section>
+    <section class="opinion-section">
+      <h2>Tech Insights & Editorials</h2>
+      <div class="opinion">
+        <h3>Why Pakistan Must Invest in AI Education</h3>
+        <p>With global demand for AI talent rising, experts urge the government to integrate machine learning into national curriculum.</p>
+      </div>
+      <div class="opinion">
+        <h3>Digital Privacy in the Age of Surveillance</h3>
+        <p>As smart devices become ubiquitous, citizens demand stronger data protection laws and transparency from tech giants.</p>
+      </div>
+    </section>
+
+  </main>
+<section class="grid-articles">
+    <article class="card">
+      <img src="/images/5G-expansion.jpg" alt="5G Expansion">
+      <h2>5G Rollout Accelerates Across South Asia</h2>
+      <p>Telecom giants announce nationwide 5G coverage by 2026, promising ultra-fast connectivity and smart city integration.</p>
+      <a href="#">Coverage Map →</a>
+    </article>
+  
+    <article class="card">
+      <img src="/images/robotic-lab.jpg" alt="Robotics Lab">
+      <h2>Karachi University Launches Robotics Innovation Hub</h2>
+      <p>Students and researchers collaborate on autonomous drones, robotic arms, and AI-driven machines for industrial use.</p>
+      <a href="#">Lab Tour →</a>
+    </article>
+  </section>
+  <section class="tech-trends">
+    <h2>📊 Tech Trends to Watch</h2>
+    <ul>
+      <li>🔐 Rise of Zero-Trust Cybersecurity Models</li>
+      <li>🧬 AI in Healthcare: Predictive Diagnosis Tools</li>
+      <li>🌐 Web3 Adoption in Digital Identity Systems</li>
+      <li>⚡ Battery Tech: Solid-State Breakthroughs</li>
+      <li>📡 Satellite Internet for Rural Connectivity</li>
+    </ul>
+  </section>
+  
+  <!-- Expanded Opinion Section -->
+  <section class="opinion-section">
+    <h2>🧠 Editorials & Expert Opinions</h2>
+  
+    <div class="opinion">
+      <h3>Tech Startups: Pakistan’s Untapped Goldmine</h3>
+      <p>With a young, tech-savvy population, Pakistan is poised to become a regional hub for innovation — if funding and mentorship align.</p>
+    </div>
+  
+    <div class="opinion">
+      <h3>Women in STEM: Breaking Barriers</h3>
+      <p>Female engineers and coders are reshaping Pakistan’s tech landscape, demanding equal opportunities and recognition.</p>
+    </div>
+  
+    <div class="opinion">
+      <h3>Digital Literacy: The Missing Link</h3>
+      <p>Experts argue that without nationwide digital education, tech growth will remain limited to urban elites.</p>
+    </div>
+  </section>
+  
+  <!-- Future Watch Section -->
+  <section class="future-watch">
+    <h2>🚀 Future Watch</h2>
+    <p>Here’s what’s coming next in the world of tech:</p>
+    <ul>
+      <li>🧠 Neural implants for memory enhancement</li>
+      <li>🛰️ Pakistan’s first Mars probe mission proposal</li>
+      <li>🕶️ AR glasses replacing smartphones by 2030</li>
+      <li>🏭 Fully automated smart factories in Lahore</li>
+    </ul>
+  </section>
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Global News Portal | All rights reserved.</p>
+  </footer>
+
+  <script>
+    // 🌐 Toggle mobile navigation
+    function toggleMenu() {
+      const navLinks = document.getElementById('navLinks');
+      if (navLinks) navLinks.classList.toggle('active');
+    }
+    
+    // 🔍 Live search across .card, .opinion, .tech-trends li, .future-watch li
+    function setupLiveSearch() {
+      const input = document.getElementById('searchInput');
+      if (!input) return;
+    
+      input.addEventListener('input', function () {
+        const query = this.value.toLowerCase();
+        console.log("Searching for:", query);
+    
+        const items = [
+          ...document.querySelectorAll('.card'),
+          ...document.querySelectorAll('.opinion'),
+          ...document.querySelectorAll('.tech-trends li'),
+          ...document.querySelectorAll('.future-watch li'),
+          ...document.querySelectorAll('.hero p')
+        ];
+    
+        items.forEach(item => {
+          const text = item.textContent.toLowerCase();
+          item.style.display = text.includes(query) ? 'block' : 'none';
+        });
+      });
+    }
+    
+    // 🎬 Reveal sections on scroll
+    function setupScrollReveal() {
+      const sections = document.querySelectorAll('section');
+    
+      const revealOnScroll = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        });
+      }, {
+        threshold: 0.3,
+        rootMargin: "0px 0px -50px 0px"
+      });
+    
+      sections.forEach(section => revealOnScroll.observe(section));
+    }
+    
+    // 🚀 Initialize all features
+    document.addEventListener('DOMContentLoaded', () => {
+      toggleMenu();
+      setupLiveSearch();
+      setupScrollReveal();
+    });
+    
+    document.getElementById("categorySelect").addEventListener("change", function () {
+    const selectedPage = this.value;
+    window.location.href = selectedPage;
+  });
+    </script>
+</body>
+</html>

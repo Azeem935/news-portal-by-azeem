@@ -1,0 +1,330 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #1a1a1a;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.nav-brand {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: white;
+}
+
+/* Toggle Button (SVG Icon) */
+.nav-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: none;
+}
+
+.nav-toggle svg {
+  width: 28px;
+  height: 28px;
+  fill: white;
+  transition: transform 0.3s ease;
+}
+
+.nav-toggle:hover svg {
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 4px #00ffff);
+}
+
+/* Nav Links - Desktop */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 34px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.nav-links li a:hover {
+  background-color: #333;
+  text-shadow: 0 0 6px #00ffff;
+}
+
+.nav-links li a.active {
+  background-color: #00ffff;
+  color: #111;
+  font-weight: bold;
+  box-shadow: 0 0 8px #00ffff;
+}
+
+/* Mobile Sidebar Menu */
+@media (max-width: 768px) {
+  .nav-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 70%;
+    height: 100vh;
+    background-color: #000;
+    padding-top: 80px;
+    padding-left: 30px;
+    transition: left 0.4s ease;
+    box-shadow: 2px 0 10px rgba(255, 255, 255, 0.1);
+  }
+
+  .nav-links.active {
+    left: 0;
+  }
+
+  .nav-links li {
+    margin-bottom: 20px;
+  }
+
+  .nav-links li a {
+    font-size: 18px;
+    color: white;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
+  }
+
+  .nav-brand {
+    font-size: 1.4rem;
+  }
+}
+
+/* Hero Section */
+.politics-page .hero {
+  background: linear-gradient(to right, #2c3e50, #34495e);
+  color: #fff;
+  margin: 15px 8px 0;
+  padding: 3rem 2rem;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.politics-page .hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  text-shadow: 0 0 8px rgba(255,255,255,0.3);
+}
+
+.politics-page .hero p {
+  font-size: 1.2rem;
+  color: #ddd;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+/* Grid Articles */
+.grid-articles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 2rem 1rem;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+.search-section {
+  background: linear-gradient(to right, #fdf6f0, #eae2dc);
+  padding: 30px 20px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  border-bottom: 1px solid #ddd;
+}
+
+.category-switcher {
+  text-align: center;
+  margin: 30px auto;
+  padding: 10px;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0, 255, 255, 0.3);
+  width: fit-content;
+}
+
+.category-switcher label {
+  color: #fff;
+  font-weight: bold;
+  margin-right: 10px;
+  font-size: 1.1rem;
+}
+
+#categorySelect {
+  padding: 10px 14px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: none;
+  background-color: #ffffff;
+  color: #333;
+  box-shadow: 0 0 8px rgba(0, 255, 255, 0.2);
+  transition: box-shadow 0.3s ease;
+}
+
+#categorySelect:hover {
+  box-shadow: 0 0 12px rgba(0, 255, 255, 0.5);
+}
+
+
+
+#searchInput {
+  font-family: 'Georgia', serif;
+  font-size: 18px;
+  padding: 12px 16px;
+  width: 90%;
+  max-width: 500px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  color: #333;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+#searchInput:focus {
+  outline: none;
+  border-color: #b85c38;
+  box-shadow: 0 0 10px rgba(184, 92, 56, 0.3);
+  background-color: #fffefc;
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card h2 {
+  font-size: 1.3rem;
+  margin: 1rem;
+  color: #e63946;
+}
+
+.card p {
+  margin: 0 1rem 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.card a {
+  display: block;
+  margin: 0 1rem 1rem;
+  color: #0077cc;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.card a:hover {
+  color: #00ffff;
+  text-shadow: 0 0 6px #00ffff;
+}
+
+/* Opinion Section */
+.opinion-section {
+  background-color: #f4f4f4;
+  padding: 2rem;
+  border-top: 2px solid #ccc;
+}
+
+.opinion-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #003366;
+  text-align: center;
+}
+
+.opinion {
+  background-color: #fff;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.opinion h3 {
+  font-size: 1.2rem;
+  color: #0055aa;
+  margin-bottom: 10px;
+}
+
+.opinion p {
+  color: #444;
+  line-height: 1.7;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #003366;
+  color: #fff;
+  margin-top: 40px;
+  font-size: 0.9rem;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 768px) {
+  .politics-page .hero h1 {
+    font-size: 2rem;
+  }
+
+  .card h2 {
+    font-size: 1.1rem;
+  }
+
+  .opinion-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .opinion h3 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .grid-articles {
+    grid-template-columns: 1fr;
+  }
+
+  .politics-page .hero {
+    padding: 2rem 1rem;
+  }
+} 
